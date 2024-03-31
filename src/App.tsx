@@ -1,17 +1,23 @@
-import ListGroup from "./components/ListGroup"  
-
-function App(){
-  let items = [
-    'New York',
-    'San Francisco',
-    'Tokyo',
-    'London',
-    'Paris'
-];
-const handleSelectItem = (item: string) => {
-  console.log(item)
-}
-  return <div><ListGroup items={items} heading="Cities"/></div>
+import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Work from "./components/Work";
+import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contacts"
+import Footer from "./components/Footer"
+function App() {
+return (
+  <>
+    <div className="App">
+      <Home />
+      <About />
+      <Work />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </div>
+  </>
+);
 }
 
 export default App;
